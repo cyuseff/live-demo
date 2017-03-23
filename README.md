@@ -1,10 +1,10 @@
 # live-demo
 
-Start hot reload
+Start hot reload:
     $npm start
 
-Run test
+Run test:
     $npm test
 
-Run test in watch mode
+Run test in watch mode:
     $npm run-script test-watch
