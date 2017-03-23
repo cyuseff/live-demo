@@ -7,7 +7,6 @@ class Comp001 extends React.Component {
     }
 
     add() {
-        console.log('updated from my function');
         const n = this.state.count + 1;
         this.setState({ count: n });
     }
@@ -22,12 +21,14 @@ class Comp001 extends React.Component {
                 <button
                     className="btn btn-default"
                     onClick={() => this.add()}
-                >Add</button>
+                >
+                    {this.props.addLabel}
+                </button>
                 <button
                     className="btn btn-danger"
                     onClick={() => this.reset()}
                 >Reset</button>
-                <p>Count: {this.state.count}</p>
+                <p>Count: <span className="count-span">{this.state.count}</span></p>
             </div>
         );
     }

@@ -4,7 +4,7 @@ import Comp001 from './Comp001';
 export default () => {
     return (
         <div>
-            <Comp001 name="Hello world" label="123" start={10000} />
+            <Comp001 addLabel="add" start={10000} />
         </div>
     );
 };
